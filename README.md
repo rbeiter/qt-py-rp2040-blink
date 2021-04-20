@@ -1,6 +1,6 @@
 # Simple GPIO pin toggle demo
 
-To build, provide a path to the ARM GCC cross-compiler and either a path to the PICO SDK checked out on your local machine or set `PICO_SDK_FETCH_FROM_GIT=true` in the environment:
+To build - include the ARM GCC cross-compiler in your path, and either a path to the PICO SDK checked out on your local machine or set `PICO_SDK_FETCH_FROM_GIT=true` in the environment:
 
     export PATH=${PATH}:/path/to/arm-none-eabi-gcc/bin/
 
@@ -32,21 +32,21 @@ This information is from the Circuit Python port for the [QT Py RP2040](https://
 | A1 / D1        | GPIO 28     |
 | A2 / D2        | GPIO 27     |
 | A3 / D3        | GPIO 26     |
-| SDA 0 / D4     | GPIO 24     |
-| SCL 0 / D5     | GPIO 25     |
+| I2C0 SDA / D4  | GPIO 24     |
+| I2C0 SCL / D5  | GPIO 25     |
 | TX / D6        | GPIO 20     |
 | RX / D7        | GPIO 5      |
-| SCK / D8       | GPIO 6      |
-| MISO / D9      | GPIO 4      |
-| MOSI / D10     | GPIO 3      |
+| SPI0 SCK / D8  | GPIO 6      |
+| SPI0 DI / D9   | GPIO 4      |
+| SPI0 DO / D10  | GPIO 3      |
 
-| QT Py Pin      | RP2040 GPIO |
-| -------------- | ----------- |
-| NeoPixel Data  | GPIO 12     |
-| NeoPixel Power | GPIO 11     |
-| Button         | GPIO 21     |
-| QWIIC/QT SDA 1 | GPIO 22     |
-| QWIIC/QT SCL 1 | GPIO 23     |
+| QT Py Peripheral   | RP2040 GPIO |
+| ------------------ | ----------- |
+| NeoPixel Data      | GPIO 12     |
+| NeoPixel Power     | GPIO 11     |
+| Button             | GPIO 21     |
+| QWIIC/QT I2C1 SDA  | GPIO 22     |
+| QWIIC/QT I2C1 SCL  | GPIO 23     |
 
 # Current issues
 
